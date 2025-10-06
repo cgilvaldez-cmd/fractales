@@ -28,9 +28,9 @@ angle_step = 2 * np.pi / n_rotations
 
 for i in range(n_rotations):
     angle = i * angle_step
-    x_rot = x * np.cos(angle) - y * np.sin(angle)
-    y_rot = x * np.sin(angle) + y * np.cos(angle)
-    plt.plot(x_rot, y_rot)
+    X = x * np.cos(angle) - y * np.sin(angle)
+    Y = x * np.sin(angle) + y * np.cos(angle)
+    plt.plot(X, Y)
     
     
 
